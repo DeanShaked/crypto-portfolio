@@ -1,11 +1,12 @@
 import "./App.css";
+import Header from "./components/Header/Header";
+import PortfolioTable from "./components/TableContainer/PortfolioTable";
 
 function App() {
   return (
-    <div className="app h-[500px] bg-orange-900">
-      <div className="main-table">
-        <div className="flex-col">Symbol</div>
-      </div>
+    <div className="">
+      <Header />
+      <PortfolioTable />
     </div>
   );
 }
