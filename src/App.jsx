@@ -1,6 +1,6 @@
-import "./App.css";
 import Header from "./components/Header/Header";
 import PortfolioTable from "./components/TableContainer/PortfolioTable";
+import "./App.css";
 
 function App() {
   return (
