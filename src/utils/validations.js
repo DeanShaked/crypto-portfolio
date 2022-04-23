@@ -1,6 +1,6 @@
 import * as yup from "yup";
 
-export const newBuySchema = yup.object({
+export const NewAssetSchema = yup.object({
   symbol: yup.required("Symbol is required"),
   symbolName: yup.required("Symbol Name is required"),
   amount: yup.required("Amount is required"),

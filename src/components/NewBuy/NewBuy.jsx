@@ -1,7 +1,7 @@
 import React from "react";
-import { newBuySchema } from "../../utils/validations";
-const NewBuy = () => {
-  return <form>NewBuy</form>;
+import { NewAssetSchema } from "../../utils/validations";
+const NewAsset = () => {
+  return <form>NewAsset</form>;
 };
 
-export default NewBuy;
+export default NewAsset;
