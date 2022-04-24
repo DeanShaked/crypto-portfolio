@@ -1,12 +1,15 @@
+// Components
 import Header from "./components/Header/Header";
-import PortfolioTable from "./components/TableContainer/PortfolioTable";
+import RouterConfig from "./components/RouterConfig";
 import "./App.css";
 
 function App() {
   return (
-    <div className="">
+    <div className="app">
       <Header />
-      <PortfolioTable />
+      <main className="main">
+        <RouterConfig />
+      </main>
     </div>
   );
 }
