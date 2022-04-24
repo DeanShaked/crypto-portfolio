@@ -40,31 +40,6 @@ const PortfolioTable = () => {
         accessor: (properties) => {},
         disableSortBy: true,
       },
-      {
-        Header: "Symbol",
-        accessor: (properties) => {},
-        disableSortBy: true,
-      },
-      {
-        Header: "Symbol",
-        accessor: (properties) => {},
-        disableSortBy: true,
-      },
-      {
-        Header: "Symbol",
-        accessor: (properties) => {},
-        disableSortBy: true,
-      },
-      {
-        Header: "Symbol",
-        accessor: (properties) => {},
-        disableSortBy: true,
-      },
-      {
-        Header: "Symbol",
-        accessor: (properties) => {},
-        disableSortBy: true,
-      },
     ],
     [ratesDict, openPositionsList]
   );
