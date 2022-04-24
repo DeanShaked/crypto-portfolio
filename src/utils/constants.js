@@ -1,6 +1,7 @@
 export const paths = {
-  homePath: "/",
+  homePath: "/home",
   loginPath: "/login",
-  monthlyBudget: "/monthly-budget",
-  newAsset: "/new-asset",
+  portfolioPath: "/home/portfolio",
+  monthlyBudgetPath: "/home/monthly-budget",
+  newAssetPath: "/home/new-asset",
 };
