@@ -15,6 +15,8 @@ import {
 // React Table Hooks
 import { useFilters, useSortBy, useTable } from "react-table";
 
+import "./TableView.scss";
+
 const TableView = ({ columns, data }) => {
   const isTableSorted = () => {
     return null;
@@ -29,8 +31,6 @@ const TableView = ({ columns, data }) => {
     useFilters,
     useSortBy
   );
-
-  useEffect(() => {}, []);
 
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     table;
@@ -96,8 +96,7 @@ const TableView = ({ columns, data }) => {
 
 TableView.propTypes = {
   columns: PropTypes.array,
-  data: PropTypes.array,
-  handleClickedChartBySymbol: PropTypes.func,
+  data: PropTypes.any,
 };
 
 export default TableView;
