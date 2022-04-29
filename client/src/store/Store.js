@@ -1,8 +1,8 @@
 // Auto defualt redux dev tools,thunk middleware,development mistakes
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import appSlice from "@/store/slicers/appSlice";
-import tradeSlice from "@/store/slicers/tradeSlice";
-import userSlice from "@/store/slicers/userSlice";
+import appSlice from "./slicers/appSlice";
+import tradeSlice from "./slicers/tradeSlice";
+import userSlice from "./slicers/userSlice";
 
 const combinedReducer = combineReducers({
   appSlice,

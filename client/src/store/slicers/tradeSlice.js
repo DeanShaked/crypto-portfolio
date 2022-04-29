@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getPositions } from "@/store/asyncThunk";
+import { fetchPositions } from "../asyncThunk";
 
 // Trade initial state
 const initialState = {
@@ -13,8 +13,11 @@ export const tradeSlice = createSlice({
   // Reducers for async actions
   extraReducers: {
     // User Data
-    [getPositions.fulfilled]: (state, action) => {
+    [fetchPositions.fulfilled]: (state, action) => {
       state.positionsList = action.payload;
     },
   },
 });
+// Export actions under reducers
+export const {} = tradeSlice.actions;
+export default tradeSlice.reducer;

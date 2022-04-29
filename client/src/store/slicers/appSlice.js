@@ -33,8 +33,6 @@ export const appSlice = createSlice({
   extraReducers: {},
 });
 
-/* eslint-enable no-unused-vars */
-
 // Export actions under reducers
 export const { toggleModal } = appSlice.actions;
 export default appSlice.reducer;

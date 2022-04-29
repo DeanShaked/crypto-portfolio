@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchUserData } from "@/store/asyncThunk";
+import { fetchUserData } from "../asyncThunk";
 
 // User initial state
 const initialState = {
@@ -18,3 +18,7 @@ export const userSlice = createSlice({
     },
   },
 });
+
+// Export actions under reducers
+export const {} = userSlice.actions;
+export default userSlice.reducer;

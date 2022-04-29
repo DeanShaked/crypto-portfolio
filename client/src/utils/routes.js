@@ -5,4 +5,4 @@ const routes = {
   _URL_GET_USER_DATA: `/api/get-user-data`,
 };
 
-module.exports = routes;
+export default routes;

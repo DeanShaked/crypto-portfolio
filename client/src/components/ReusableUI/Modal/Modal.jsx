@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
-import PropTypes from "prop-types";
-import { keyCodes } from "utils/constants";
+import { keyCodes } from "../../../utils/constants";
 import { useTransition, animated } from "react-spring";
 
 /**
@@ -66,12 +65,6 @@ const Modal = (props) => {
       )}
     </>
   );
-};
-
-Modal.propTypes = {
-  isModalShown: PropTypes.bool.isRequired,
-  children: PropTypes.any.isRequired,
-  toggleModalFunction: PropTypes.func,
 };
 
 export default Modal;
