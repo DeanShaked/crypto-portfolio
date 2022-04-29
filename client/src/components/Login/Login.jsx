@@ -1,7 +1,6 @@
 import React from "react";
-import { NewAssetSchema } from "../../utils/validations";
 
-const NewAsset = () => {
+const Login = () => {
   const handleoOnSubmit = () => {};
   return (
     <form
@@ -55,4 +54,4 @@ const NewAsset = () => {
   );
 };
 
-export default NewAsset;
+export default Login;

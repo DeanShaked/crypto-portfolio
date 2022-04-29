@@ -7,3 +7,16 @@ export const NewAssetSchema = yup.object({
   openRate: yup.number().required("Open Rate is required"),
   platform: yup.string().required("Platform is required"),
 });
+
+export const LoginSchema = yup.object({
+  email: yup.string().required("Please enter your Email"),
+  password: yup.string().required("Please enter your password"),
+});
+
+export const RegisterSchema = yup.object({
+  email: yup.string().required("Please enter your Email"),
+  password: yup.string().required("Please enter your password"),
+  confirmPassword: yup
+    .string()
+    .oneOf([yup.ref("password"), null], "Please confirm your password"),
+});
