@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const cartScheme = new Schema(
+const assetSchema = new Schema(
   {
-    symbolName: {
+    ticker: {
       type: String,
       required: true,
     },
-    symbol: {
+    symbolName: {
       type: String,
       required: true,
     },
@@ -37,4 +37,4 @@ const cartScheme = new Schema(
   }
 );
 
-module.exports = mongoose.model('Cart', cartScheme);
+module.exports = mongoose.model('Asset', assetSchema);

@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 const authRoutes = require("./routes/authRoutes/authRoutes");
 const tradeRoutes = require("./routes/tradeRoutes/tradeRoutes");
 require("dotenv").config();
-const URI = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.sky9z.mongodb.net/`;
+// const URI = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.sky9z.mongodb.net/`;
+const URI = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.jl6lg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const PORT = 5000;
 
 const app = express();
