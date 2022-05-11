@@ -1,4 +1,4 @@
-export const newAssetsInputs = [
+export const newAssetInputs = [
   {
     id: "ticker",
     name: "ticker",

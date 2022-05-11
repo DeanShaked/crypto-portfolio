@@ -14,7 +14,7 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-        <main className="main">
+        <main className="main h-screen">
           <RouterConfig />
         </main>
         <AppModals />
