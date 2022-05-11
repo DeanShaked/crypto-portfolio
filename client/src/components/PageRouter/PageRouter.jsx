@@ -1,11 +1,11 @@
 // App
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { paths } from "../../utils/constants";
+import { paths } from "@/utils/constants";
 
 // Redux
 import { useDispatch } from "react-redux";
-import { toggleModal } from "../../store/slicers/appSlice";
+import { toggleModal } from "@/store/slicers/appSlice";
 
 const PageRouter = () => {
   const dispatch = useDispatch();

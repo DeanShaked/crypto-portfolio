@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { returnNumberWithCommas } from "../../utils/helpers";
+import { returnNumberWithCommas } from "@/utils/helpers";
 import { DataMock } from "./DataMock";
 import TableView from "./TableView";
 

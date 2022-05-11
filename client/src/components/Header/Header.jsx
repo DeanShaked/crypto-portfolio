@@ -1,5 +1,5 @@
 import React from "react";
-import PageRouter from "../PageRouter/PageRouter";
+import PageRouter from "@/components/PageRouter/PageRouter";
 
 const Header = () => {
   return (

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
-import { keyCodes } from "../../../utils/constants";
+import { keyCodes } from "@/utils/constants";
 import { useTransition, animated } from "react-spring";
 
 /**

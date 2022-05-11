@@ -3,11 +3,11 @@ import React from "react";
 
 // Redux
 import { useDispatch, useSelector } from "react-redux";
-import { toggleModal } from "../store/slicers/appSlice";
+import { toggleModal } from "@/store/slicers/appSlice";
 
 // Components
-import Modal from "../components/ReusableUI/Modal/Modal";
-import Login from "../components/Login/Login";
+import Modal from "@/components/ReusableUI/Modal/Modal";
+import Login from "@/components/Login/Login";
 
 const AppModals = () => {
   const dispatch = useDispatch();

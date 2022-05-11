@@ -1,10 +1,10 @@
 // App
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { paths } from "../utils/constants";
+import { paths } from "@/utils/constants";
 
 // Layout
-import Home from "../layout/Home/Home";
+import Home from "@/layout/Home/Home";
 
 // Components
 import MonthlyBudget from "./MonthlyBudget/MonthlyBudget";
