@@ -9,4 +9,14 @@ export default defineConfig({
     alias: [{ find: "@", replacement: path.resolve(__dirname, "/src") }],
   },
   plugins: [react()],
+  server: {
+    proxy: {
+      // with options
+      '/api': {
+        target: 'http://localhost:5000',
+        changeOrigin: true,
+      },
+    }
+  }
+
 });
