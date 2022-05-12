@@ -6,6 +6,7 @@
   scrollbar-color: #b5b5ba #f1f1f1;
   scrollbar-width: thin;
   letter-spacing: 0.5px !important;
+  
 }
 
 /* Modal Styles START */
@@ -43,6 +44,10 @@
     transition: all 0.2s ease;
     animation: none;
   }
+}
+
+main {
+  
 }
 
 @keyframes move {

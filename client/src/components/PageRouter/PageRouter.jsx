@@ -14,8 +14,8 @@ const PageRouter = () => {
     dispatch(toggleModal("login"));
   };
   return (
-    <div className="flex flex-row w-full">
-      <div className="flex flex-row space-x-5 items-center flex-grow">
+    <div className="flex flex-row w-full ">
+      <div className="flex flex-row bg-blue-600 space-x-5 items-center flex-grow">
         <NavLink
           to={paths.newAssetPath}
           className={({ isActive }) =>

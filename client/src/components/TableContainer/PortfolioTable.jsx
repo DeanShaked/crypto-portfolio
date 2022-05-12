@@ -2,8 +2,12 @@ import React, { useMemo } from "react";
 import { returnNumberWithCommas } from "@/utils/helpers";
 import { DataMock } from "./DataMock";
 import TableView from "./TableView";
+import { useDispatch, useSelector } from "react-redux";
 
 const PortfolioTable = () => {
+  const positionsList = useSelector((state) => state.tradeSlice.openPositions);
+
+  console.log("positionsList :>> ", positionsList);
   const tableColumns = useMemo(
     () => [
       {

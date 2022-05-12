@@ -14,7 +14,7 @@ exports.createNewAsset = async (req, res, next) => {
 exports.getOpenPositions = async (req, res, next) => {
   try {
     const openPositions = await AssetSchema.find();
-    console.log("openPositions", openPositions);
+    -console.log("openPositions", openPositions);
     return res.status(200).json({ message: openPositions });
   } catch (error) {
     return res.status(401).json({ message: error });

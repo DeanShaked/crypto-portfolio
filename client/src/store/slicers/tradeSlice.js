@@ -3,7 +3,7 @@ import { fetchPositions } from "../asyncThunk";
 
 // Trade initial state
 const initialState = {
-  positionsList: {}, // All rates as a dict (Instrument symbolName as object key)
+  openPositions: {}, // All rates as a dict (Instrument symbolName as object key)
 };
 
 export const tradeSlice = createSlice({
@@ -12,9 +12,9 @@ export const tradeSlice = createSlice({
   reducers: {},
   // Reducers for async actions
   extraReducers: {
-    // User Data
     [fetchPositions.fulfilled]: (state, action) => {
-      state.positionsList = action.payload;
+      console.log("action.payload", action.payload);
+      state.openPositions = action.payload;
     },
   },
 });

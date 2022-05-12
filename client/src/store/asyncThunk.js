@@ -4,7 +4,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import { getUserData } from "@/api/apiUser";
 
 // Trade API
-import { getPositions } from "@/api/apiTrade";
+import { getOpenPositions } from "@/api/apiTrade";
 
 export const fetchUserData = createAsyncThunk("user/getUserData", async () => {
   const userData = await getUserData();
@@ -14,7 +14,8 @@ export const fetchUserData = createAsyncThunk("user/getUserData", async () => {
 export const fetchPositions = createAsyncThunk(
   "trade/getPostions",
   async () => {
-    const positions = await getPositions();
+    const positions = await getOpenPositions();
+    console.log("positions", positions);
     return positions;
   }
 );
