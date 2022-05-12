@@ -2,32 +2,31 @@ const AssetSchema = require("../../models/AssetSchema");
 
 exports.createNewAsset = async (req, res, next) => {
   try {
-    const body = req.body;
-    console.log("body", body);
-    // Send new asset to DB
-    const newAsset = await AssetSchema(body);
+    const assetData = req.body;
+    const newAsset = await AssetSchema(assetData);
     await newAsset.save();
-    return res.status(200).json({ message: body });
+    return res.status(200).json({ message: assetData });
   } catch (error) {
     return res.status(401).json({ message: error });
   }
 };
 
-exports.getAllPositions = async (req, res, next) => {
+exports.getOpenPositions = async (req, res, next) => {
   try {
-    const allPositions = await AssetSchema.find();
-    return res.status(200).json({ message: allPositions });
+    const openPositions = await AssetSchema.find();
+    console.log("openPositions", openPositions);
+    return res.status(200).json({ message: openPositions });
   } catch (error) {
     return res.status(401).json({ message: error });
   }
 };
 
-exports.removePosition = async (req, res, next) => {
+exports.closePosition = async (req, res, next) => {
   try {
-    const { positionId } = req;
-    const positionDelted = AssetSchema.find(positionId);
+    const positionId = req.body;
+    const closedPosition = AssetSchema.find(positionId);
     const res = AssetSchema.findByIdAndDelete(positionId);
-    return res.status(200).json({ message: positionDelted });
+    return res.status(200).json({ message: closedPosition });
   } catch (error) {
     return res.status(401).json({ message: error });
   }

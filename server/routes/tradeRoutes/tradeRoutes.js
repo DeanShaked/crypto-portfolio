@@ -4,7 +4,7 @@ const tradeController = require("../../controller/tradeController/tradeControlle
 const route = express.Router();
 
 route.post("/new-asset", tradeController.createNewAsset);
-route.get("/get-all-positions", tradeController.getAllPositions);
-route.get("/delete", tradeController.removePosition);
+route.get("/open-positions", tradeController.getOpenPositions);
+route.get("/close-position", tradeController.closePosition);
 
 module.exports = route;
